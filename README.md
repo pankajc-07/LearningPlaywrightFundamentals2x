@@ -45,11 +45,27 @@ Run tests in a specific browser:
 npx playwright test --project=chromium
 ```
 
+Run a specific test file:
+
+```bash
+npx playwright test tests/01_Basics/229_Basic_Test.spec.ts
+```
+
 ## Project Structure
 
 - `tests/` - Test files and learning modules
   - `01_Basics/` - Playwright basics
+    - `229_Basic_Test.spec.ts` - Basic Playwright test example
+    - `230_Test_Annoations.spec.ts` - Test annotations and metadata
   - `02_first_tests/` - Writing your first tests
+    - `231_First_Running_Verify.spec.ts` - First running and verification test
+    - `232_BCP.spec.ts` - Browser Context & Page fundamentals
+    - `233_BCP_MultipeContext.spec.ts` - Multiple browser contexts
+    - `234_BCP_Multiple_Pages.spec.ts` - Handling multiple pages
+    - `235_TEST_I_PW.spec.ts` - Introduction to Playwright testing
+    - `236_BCP_TEST_PW.spec.ts` - Browser context and page tests
+    - `237_BCP_Test_Options.spec.ts` - Test options and configurations
+    - `Task_01_BCP.spec.ts` - Practice task for browser context and page
   - `03_Locators_Commands/` - Locators and commands
   - `04_Session_Storage/` - Session storage handling
   - `05_Allure_Reporting/` - Allure reporting integration
@@ -80,9 +96,12 @@ npx playwright test --project=chromium
 
 The Playwright configuration includes:
 - Test directory: `./tests`
+- Test match pattern: `tests/**/*.spec.ts`
 - Browsers: Chromium (default)
 - HTML reporter enabled
-- Tracing on first retry
+- Tracing: enabled (`on`)
+- Headless mode: disabled (runs in headed mode by default)
+- Viewport: 1920x1080
 
 ## License
 
