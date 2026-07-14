@@ -1,17 +1,19 @@
 # LearningPlaywrightFundamentals2x
 
-This repository contains learning materials and practice tests for Playwright fundamentals.
+This repository contains Playwright learning materials, practice tests, and hands-on examples for Batch 2X. It covers the fundamentals of end-to-end testing with Playwright, including locators, assertions, browser contexts, frames, keyboard interactions, and project-based exercises.
 
-## Project Setup
+## Overview
 
-This project uses [Playwright](https://playwright.dev/) for end-to-end testing.
+The goal of this project is to help learners build confidence with Playwright by practicing real test scenarios in a structured way. The exercises are organized by topic and gradually increase in complexity.
 
-### Prerequisites
+## Prerequisites
 
-- Node.js
-- npm
+Before getting started, make sure you have:
 
-### Installation
+- Node.js installed
+- npm available on your system
+
+## Installation
 
 Install dependencies:
 
@@ -19,7 +21,7 @@ Install dependencies:
 npm install
 ```
 
-Install Playwright browsers:
+Install the required Playwright browsers:
 
 ```bash
 npx playwright install
@@ -53,55 +55,46 @@ npx playwright test tests/01_Basics/229_Basic_Test.spec.ts
 
 ## Project Structure
 
-- `tests/` - Test files and learning modules
-  - `01_Basics/` - Playwright basics
-    - `229_Basic_Test.spec.ts` - Basic Playwright test example
-    - `230_Test_Annoations.spec.ts` - Test annotations and metadata
-  - `02_first_tests/` - Writing your first tests
-    - `231_First_Running_Verify.spec.ts` - First running and verification test
-    - `232_BCP.spec.ts` - Browser Context & Page fundamentals
-    - `233_BCP_MultipeContext.spec.ts` - Multiple browser contexts
-    - `234_BCP_Multiple_Pages.spec.ts` - Handling multiple pages
-    - `235_TEST_I_PW.spec.ts` - Introduction to Playwright testing
-    - `236_BCP_TEST_PW.spec.ts` - Browser context and page tests
-    - `237_BCP_Test_Options.spec.ts` - Test options and configurations
-    - `Task_01_BCP.spec.ts` - Practice task for browser context and page
-  - `03_Locators_Commands/` - Locators and commands
-  - `04_Session_Storage/` - Session storage handling
-  - `05_Allure_Reporting/` - Allure reporting integration
-  - `06_Multiple_Element_/` - Handling multiple elements
-  - `07_WebTables/` - Working with web tables
-  - `08_Web_Select_Frames_Iframe/` - Select, frames, and iframes
-  - `09_Frame_Iframe/` - Frame and iframe handling
-  - `10_Keyboard_Hover_Drag_Drop/` - Keyboard, hover, drag & drop actions
-  - `11_JS_Alerts/` - JavaScript alerts handling
-  - `12_Handle_SVG/` - SVG element handling
-  - `13_Shadow_DOM/` - Shadow DOM interactions
-  - `14_FileUpload/` - File upload scenarios
-  - `15_File_Download/` - File download scenarios
-  - `16_Scroll_toElement/` - Scrolling to elements
-  - `17_Expect_Assertions/` - Expect assertions
-  - `18_Test_hooks/` - Test hooks (before/after)
-  - `19_Data_Driven_Testing/` - Data-driven testing
-  - `20_Page_Object_Model/` - Page Object Model pattern
-  - `21_Fixture/` - Playwright fixtures
-  - `22_Misc_Concepts/` - Miscellaneous concepts
-  - `23_Advance_Framework/` - Advanced framework topics
-  - `Projects/` - Practice projects
-  - `example.spec.ts` - Sample Playwright tests against playwright.dev
-- `playwright.config.ts` - Playwright configuration
-- `package.json` - Project dependencies and scripts
+- tests/ - Test files and learning modules
+  - 01_Basics/ - Playwright basics
+  - 02_first_tests/ - Initial test-writing exercises
+  - 03_Locators_Commands/ - Locators and common commands
+  - 04_Session_Storage/ - Session storage topics
+  - 05_Allure_Reporting/ - Allure reporting examples
+  - 06_Multiple_Element_/ - Multiple element handling
+  - 07_WebTables/ - Web table interactions
+  - 08_Web_Select_Frames_Iframe/ - Selects, frames, and iframes
+  - 09_Frame_Iframe/ - Frame and iframe exercises
+  - 10_Keyboard_Hover_Drag_Drop/ - Advanced user interactions
+  - 11_JS_Alerts/ - JavaScript alert handling
+  - 12_Handle_SVG/ - SVG element handling
+  - 13_Shadow_DOM/ - Shadow DOM interactions
+  - 14_FileUpload/ - File upload scenarios
+  - 15_File_Download/ - File download scenarios
+  - 16_Scroll_toElement/ - Scroll-to-element examples
+  - 17_Expect_Assertions/ - Assertions and expectations
+  - 18_Test_hooks/ - Test hooks and lifecycle concepts
+  - 19_Data_Driven_Testing/ - Data-driven testing examples
+  - 20_Page_Object_Model/ - Page Object Model patterns
+  - 21_Fixture/ - Fixture-based testing
+  - 22_Misc_Concepts/ - Additional concepts
+  - 23_Advance_Framework/ - Advanced framework topics
+  - Projects/ - Practice projects
+  - example.spec.ts - Sample Playwright test
+- playwright.config.ts - Playwright configuration
+- package.json - Project dependencies and scripts
 
-## Configuration
+## Configuration Notes
 
-The Playwright configuration includes:
-- Test directory: `./tests`
-- Test match pattern: `tests/**/*.spec.ts`
-- Browsers: Chromium (default)
-- HTML reporter enabled
-- Tracing: enabled (`on`)
-- Headless mode: disabled (runs in headed mode by default)
-- Viewport: 1920x1080
+The current setup includes:
+
+- Test directory: ./tests
+- Test pattern: tests/**/*.spec.ts
+- Chromium as the default browser
+- HTML reporting enabled
+- Tracing enabled
+- Headed mode enabled by default
+- Default viewport: 1920x1080
 
 ## License
 
