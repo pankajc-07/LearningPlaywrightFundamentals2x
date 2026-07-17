@@ -96,6 +96,15 @@ The current setup includes:
 - Headed mode enabled by default
 - Default viewport: 1920x1080
 
+## Test Reports
+
+- HTML reports are written to the playwright-report directory.
+- Allure results are stored in allure-results and can be viewed with:
+
+```bash
+npx allure serve allure-results
+```
+
 ## License
 
 ISC
