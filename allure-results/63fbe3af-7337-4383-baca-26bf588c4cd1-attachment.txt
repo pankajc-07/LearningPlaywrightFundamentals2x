@@ -1,2 +1,0 @@
-Open VWO account settings using saved session — still authenticated
-Verify settings URL loaded — https://app.wingify.com/#/settings/accounts/general?accountId=1227004

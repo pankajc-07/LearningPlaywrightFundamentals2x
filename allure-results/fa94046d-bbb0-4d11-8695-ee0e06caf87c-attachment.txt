@@ -1,4 +1,0 @@
-50
-9
-Sttus text is : Terminated
-Row: 6
