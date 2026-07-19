@@ -21,5 +21,5 @@ test('Verify Element by Filter', async ({ page }) => {
     const email = await row.locator('td[data-col="email"]').innerText();
     const country = await row.locator('td[data-col="country"]').innerText();
     console.log(email, country);
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(2000);
 });

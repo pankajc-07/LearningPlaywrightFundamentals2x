@@ -6,6 +6,15 @@ This repository contains Playwright learning materials, practice tests, and hand
 
 The goal of this project is to help learners build confidence with Playwright by practicing real test scenarios in a structured way. The exercises are organized by topic and gradually increase in complexity.
 
+## Recent Updates
+
+This repository now includes additional practice specs for:
+
+- static and dynamic web tables
+- pagination handling
+- page locator and filter-based interactions
+- task-driven exercises for table automation scenarios
+
 ## Prerequisites
 
 Before getting started, make sure you have:

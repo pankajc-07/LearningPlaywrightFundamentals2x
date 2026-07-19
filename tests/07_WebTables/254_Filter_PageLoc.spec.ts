@@ -3,8 +3,7 @@ import { test, expect } from '@playwright/test';
 test('Verify Element by Filter', async ({ page }) => {
 
     await page.goto("https://app.thetestingacademy.com/playwright/multiple_element_filter");
-    const forgottenPasswordLink = page.locator('a.list-group-item')
-        .filter({ hasText: 'Forgotten Password' });
+    const forgottenPasswordLink = page.locator('a.list-group-item').filter({ hasText: 'Forgotten Password' });
     await forgottenPasswordLink.click();
     // await page.pause();
 
@@ -16,4 +15,21 @@ test('Verify Element by Filter', async ({ page }) => {
 
     const privacyLink = page.locator('footer a').filter({ hasText: 'Privacy Policy' });
     await expect(privacyLink).toHaveAttribute('href', '#privacy-policy');
+    await page.waitForTimeout(2000);
 });
+console.log("******************************************");
+
+//Practice examples 
+test('Verify element by using filter', async ({ page }) => {
+    await page.goto("https://app.thetestingacademy.com/playwright/multiple_element_filter");
+    const accountLink = page.locator('a.list-group-item').filter({ hasText: 'My Account' });
+    await accountLink.click();
+
+    // await page.pause();
+    const groupLinks = page.locator("a.list-group-item");
+    await expect(groupLinks).toHaveCount(13);
+
+    const brandsLink = page.locator("footer a").filter({ hasText: "Brands" });
+    await expect(brandsLink).toHaveAttribute('href', '#brands');
+    await page.waitForTimeout(2000);
+})
