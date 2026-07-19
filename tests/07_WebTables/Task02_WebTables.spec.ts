@@ -38,9 +38,13 @@ test('Web Tables task ', async ({ page }) => {
 
                 await page.locator('i[class="oxd-icon bi-trash"]').nth(i).click();
                 await page.waitForTimeout(5000);
+
+                //Screenshot
+                await page.screenshot({ path: 'tests/Screenshots/sceernShot01.png', fullPage: true })
                 break;
             }
         }
     }
     // await page.pause();
 })
+

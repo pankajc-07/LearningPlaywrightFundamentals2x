@@ -83,4 +83,114 @@ test('Web table no. 3 ', async ({ page }) => {
         }
     }
 })
+console.log("******************************************");
+
+console.log("Example number 03");
+
+test('Web table 03', async ({ page }) => {
+
+    await page.goto("https://app.thetestingacademy.com/playwright/tables/webtable");
+
+    ////table[@id='companies-table']/tbody/tr[1]/td[2]
+    const firstPart03 = "//table[@id='companies-table']/tbody/tr[";
+    const secondPart03 = "]/td[";
+    const thirdPart03 = "]";
+
+    const rows03 = await page.locator("//table[@id='companies-table']/tbody/tr").count();
+    console.log(`Number of rows : ${rows03} `);
+
+    const columns03 = await page.locator("//table[@id='companies-table']/tbody/tr[1]/td").count();
+    console.log(`Number of rows : ${columns03} `);
+
+    for (let i = 1; i <= rows03; i++) {
+        for (let j = 1; j <= columns03; j++) {
+            const dynamicPath03 = `${firstPart03}${i}${secondPart03}${j}${thirdPart03}`;
+            //console.log(dynamicPath03);
+
+            const dynamicPathData03 = await page.locator(dynamicPath03).allInnerTexts();
+            //console.log(dynamicPathData03);
+
+            if (dynamicPathData03.includes('Microsoft')) {
+                const pathSib03 = `${dynamicPath03}/following-sibling::td[2]`;
+                const sibText03 = await page.locator(pathSib03).innerText();
+                console.log(`Country is : ${sibText03}`);
+            }
+        }
+    }
+})
+
+console.log("******************************************");
+
+console.log("Example number 04");
+
+test('Web table 04', async ({ page }) => {
+
+    await page.goto("https://app.thetestingacademy.com/playwright/tables/webtable");
+
+    ////table[@id='companies-table']/tbody/tr[1]/td[2]
+    const firstPart04 = "//table[@id='employees-table']/tbody/tr[";
+    const secondPart04 = "]/td[";
+    const thirdPart04 = "]";
+
+    const rows04 = await page.locator("//table[@id='employees-table']/tbody/tr").count();
+    console.log(`Number of rows : ${rows04} `);
+
+    const columns04 = await page.locator("//table[@id='employees-table']/tbody/tr[1]/td").count();
+    console.log(`Number of rows : ${columns04} `);
+
+    for (let i = 1; i <= rows04; i++) {
+        for (let j = 1; j <= columns04; j++) {
+            const dynamicPath04 = `${firstPart04}${i}${secondPart04}${j}${thirdPart04}`;
+            //console.log(dynamicPath04);
+
+            const dynamicPathData04 = await page.locator(dynamicPath04).allInnerTexts();
+            //console.log(dynamicPathData04);
+
+            if (dynamicPathData04.includes('Liam Walker')) {
+                const pathSib04 = `${dynamicPath04}/following-sibling::td[2]`;
+                const sibText04 = await page.locator(pathSib04).innerText();
+                console.log(`Eamil ID is : ${sibText04}`);
+            }
+        }
+    }
+})
+console.log("******************************************");
+
+console.log("Example number 05");
+
+test('Web table 05', async ({ page }) => {
+
+    await page.goto("https://app.thetestingacademy.com/playwright/tables/webtable");
+    await page.getByTestId("page-2").click();
+
+    ////table[@id='companies-table']/tbody/tr[1]/td[2]
+    const firstPart05 = "//table[@id='employees-table']/tbody/tr[";
+    const secondPart05 = "]/td[";
+    const thirdPart05 = "]";
+
+    const rows05 = await page.locator("//table[@id='employees-table']/tbody/tr").count();
+    console.log(`Number of rows : ${rows05} `);
+
+    const columns05 = await page.locator("//table[@id='employees-table']/tbody/tr[1]/td").count();
+    console.log(`Number of rows : ${columns05} `);
+
+    for (let i = 1; i <= rows05; i++) {
+        for (let j = 1; j <= columns05; j++) {
+            const dynamicPath05 = `${firstPart05}${i}${secondPart05}${j}${thirdPart05}`;
+            //console.log(dynamicPath05);
+
+            const dynamicPathData05 = await page.locator(dynamicPath05).allInnerTexts();
+            //console.log(dynamicPathData05);
+
+            if (dynamicPathData05.includes('Giulia Bianchi')) {
+                const pathSib05 = `${dynamicPath05}/following-sibling::td[3]`;
+                const sibText05 = await page.locator(pathSib05).innerText();
+                console.log(`Country is : ${sibText05}`);
+            }
+        }
+    }
+    //await page.pause();
+})
+
+
 
