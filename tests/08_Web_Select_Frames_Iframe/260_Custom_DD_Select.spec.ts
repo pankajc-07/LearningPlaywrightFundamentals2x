@@ -14,4 +14,23 @@ test('Basic Web Test - Verify Page Title', async ({ page }) => {
 
     await page.pause();
 });
+console.log("********************************");
 
+//Practice Examples
+console.log("Example 01");
+test('Custom dropdown ', async ({ page }) => {
+    await page.goto("https://app.thetestingacademy.com/playwright/tables/dropdowns")
+
+    await page.getByTestId("lang-trigger").click();
+    await page.getByRole('option', { name: 'TypeScript' }).click();
+
+    // await page.pause();
+
+    await page.getByTestId("framework-trigger").click();
+    await page.getByRole('option', { name: 'Next.js' }).click();
+
+    await page.locator("#experience-trigger").click();
+    await page.getByText("Senior (7+ years)", { exact: true }).click();
+
+    await page.pause();
+})

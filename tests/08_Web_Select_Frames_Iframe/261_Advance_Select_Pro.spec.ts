@@ -2,8 +2,9 @@ import { test, expect } from '@playwright/test';
 
 test('Basic Web Test - Verify Page Title', async ({ page }) => {
 
-    // ① Single — searchable
     await page.goto('https://app.thetestingacademy.com/playwright/tables/select-boxes');
+
+    // ① Single — searchable
     await page.locator("#rs-single").click();
     await page.getByText("Cypress").click()
     // await page.pause();
@@ -28,3 +29,29 @@ test('Basic Web Test - Verify Page Title', async ({ page }) => {
     await page.getByRole('option', { name: 'Pune' }).click();
     await page.pause();
 });
+console.log("********************************");
+
+//Practice Examples
+console.log("Example 01");
+test('Advance Dropdowns', async ({ page }) => {
+
+    await page.goto("https://app.thetestingacademy.com/playwright/tables/select-boxes");
+
+    //① Single — searchable
+    await page.locator("#rs-single").click();
+    await page.getByRole('option', { name: 'Playwright' }).click();
+    //await page.getByText("Selenium").click();
+
+    //② Multi — chips with remove
+    await page.locator("#rs-multi").click();
+    await page.getByText("Cucumber", { exact: true }).click();
+    await page.getByText("Mocha", { exact: true }).click();
+    await page.getByRole('option', { name: 'Playwright' }).click();
+    await page.keyboard.press("Escape");
+
+    await page.pause();
+
+
+
+
+})

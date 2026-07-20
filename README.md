@@ -1,32 +1,33 @@
 # LearningPlaywrightFundamentals2x
 
-This repository contains Playwright learning materials, practice tests, and hands-on examples for Batch 2X. It covers the fundamentals of end-to-end testing with Playwright, including locators, assertions, browser contexts, frames, keyboard interactions, and project-based exercises.
+This repository contains Playwright learning material, practice tests, and hands-on examples for Batch 2X. It is designed to help learners build confidence with end-to-end testing using real-world scenarios covering locators, assertions, frames, dropdowns, tables, alerts, uploads, downloads, and reporting.
 
 ## Overview
 
-The goal of this project is to help learners build confidence with Playwright by practicing real test scenarios in a structured way. The exercises are organized by topic and gradually increase in complexity.
+The goal of this project is to provide a structured set of Playwright exercises that gradually increase in complexity. The test suite is organized by topic so learners can practice one concept at a time and build up to more advanced automation flows.
 
-## Recent Updates
+## What’s Included
 
-This repository now includes additional practice specs for:
+Recent additions cover:
 
 - static and dynamic web tables
-- pagination handling
-- page locator and filter-based interactions
-- task-driven exercises for table automation scenarios
-- advanced select dropdown and iframe interaction examples
-- practical frame and select handling exercises for real-world UI testing
+- pagination and filtering interactions
+- advanced select dropdown handling
+- frame and iframe automation examples
+- keyboard, hover, and drag-and-drop exercises
+- file upload and download scenarios
+- HTML and Allure reporting examples
 
 ## Prerequisites
 
 Before getting started, make sure you have:
 
-- Node.js installed
+- Node.js 18 or newer
 - npm available on your system
 
 ## Installation
 
-Install dependencies:
+Install project dependencies:
 
 ```bash
 npm install
@@ -40,7 +41,7 @@ npx playwright install
 
 ## Running Tests
 
-Run all tests:
+Run the full suite:
 
 ```bash
 npx playwright test
@@ -52,69 +53,43 @@ Run tests in headed mode:
 npx playwright test --headed
 ```
 
-Run tests in a specific browser:
+Run a specific browser project:
 
 ```bash
 npx playwright test --project=chromium
 ```
 
-Run a specific test file:
+Run a single spec file:
 
 ```bash
-npx playwright test tests/01_Basics/229_Basic_Test.spec.ts
+npx playwright test tests/08_Web_Select_Frames_Iframe/261_Advance_Select_Pro.spec.ts
 ```
 
 ## Project Structure
 
-- tests/ - Test files and learning modules
-  - 01_Basics/ - Playwright basics
-  - 02_first_tests/ - Initial test-writing exercises
-  - 03_Locators_Commands/ - Locators and common commands
-  - 04_Session_Storage/ - Session storage topics
-  - 05_Allure_Reporting/ - Allure reporting examples
-  - 06_Multiple_Element_/ - Multiple element handling
-  - 07_WebTables/ - Web table interactions
-  - 08_Web_Select_Frames_Iframe/ - Selects, frames, and iframes
-  - 09_Frame_Iframe/ - Frame and iframe exercises
-  - 10_Keyboard_Hover_Drag_Drop/ - Advanced user interactions
-  - 11_JS_Alerts/ - JavaScript alert handling
-  - 12_Handle_SVG/ - SVG element handling
-  - 13_Shadow_DOM/ - Shadow DOM interactions
-  - 14_FileUpload/ - File upload scenarios
-  - 15_File_Download/ - File download scenarios
-  - 16_Scroll_toElement/ - Scroll-to-element examples
-  - 17_Expect_Assertions/ - Assertions and expectations
-  - 18_Test_hooks/ - Test hooks and lifecycle concepts
-  - 19_Data_Driven_Testing/ - Data-driven testing examples
-  - 20_Page_Object_Model/ - Page Object Model patterns
-  - 21_Fixture/ - Fixture-based testing
-  - 22_Misc_Concepts/ - Additional concepts
-  - 23_Advance_Framework/ - Advanced framework topics
-  - Projects/ - Practice projects
-  - example.spec.ts - Sample Playwright test
+- tests/ - Playwright test modules and learning exercises
 - playwright.config.ts - Playwright configuration
 - package.json - Project dependencies and scripts
+- allure-results/ - Allure test result output
+- playwright-report/ - HTML report output
 
-## Configuration Notes
+## Reporting
 
-The current setup includes:
+HTML reports can be viewed with:
 
-- Test directory: ./tests
-- Test pattern: tests/**/*.spec.ts
-- Chromium as the default browser
-- HTML reporting enabled
-- Tracing enabled
-- Headed mode enabled by default
-- Default viewport: 1920x1080
+```bash
+npx playwright show-report
+```
 
-## Test Reports
-
-- HTML reports are written to the playwright-report directory.
-- Allure results are stored in allure-results and can be viewed with:
+Allure results can be served locally with:
 
 ```bash
 npx allure serve allure-results
 ```
+
+## Notes
+
+The current configuration includes Chromium as the default browser, HTML reporting, tracing, and a default viewport of 1920x1080.
 
 ## License
 
