@@ -14,6 +14,8 @@ This repository now includes additional practice specs for:
 - pagination handling
 - page locator and filter-based interactions
 - task-driven exercises for table automation scenarios
+- advanced select dropdown and iframe interaction examples
+- practical frame and select handling exercises for real-world UI testing
 
 ## Prerequisites
 
