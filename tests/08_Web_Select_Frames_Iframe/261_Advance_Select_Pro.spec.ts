@@ -23,6 +23,7 @@ test('Basic Web Test - Verify Page Title', async ({ page }) => {
     await page.keyboard.press("Escape");
     await page.pause();
 
+    //⑤ Async — fetched on type
     await page.locator("#rs-async").click();
     await page.getByTestId('rs-async-input').fill('pun');
     await expect(page.getByTestId('rs-async-menu')).toContainText('Pune');
@@ -49,9 +50,23 @@ test('Advance Dropdowns', async ({ page }) => {
     await page.getByRole('option', { name: 'Playwright' }).click();
     await page.keyboard.press("Escape");
 
+    //③ Creatable multi — type and Enter
+    await page.locator("#rs-creatable").click();
+    await page.getByText("performance", { exact: true }).click();
+    await page.getByRole('option', { name: 'security' }).click();
+    await page.keyboard.press("Escape")
+
+    //⑤ Async — fetched on type
+    await page.locator("#rs-async").click();
+    await page.getByTestId("rs-async-input").fill("Pun");
+    await expect(page.getByTestId('rs-async-menu')).toContainText("Pune");
+    await page.getByRole('option', { name: 'Pune' }).click();
+
+    //⑤ Async — fetched on type
+    await page.locator("#rs-async").click();
+    await page.getByTestId("rs-async-input").fill("hy");
+    await expect(page.getByTestId("rs-async-menu")).toContainText("Hyderabad");
+    await page.getByText("Hyderabad", { exact: true }).click();
+
     await page.pause();
-
-
-
-
 })

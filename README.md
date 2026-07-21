@@ -12,11 +12,13 @@ Recent additions cover:
 
 - static and dynamic web tables
 - pagination and filtering interactions
-- advanced select dropdown handling
+- advanced select dropdown handling, including searchable and async select examples
 - frame and iframe automation examples
 - keyboard, hover, and drag-and-drop exercises
 - file upload and download scenarios
 - HTML and Allure reporting examples
+
+The current practice suite also includes examples for advanced select-box interactions in the spec file under tests/08_Web_Select_Frames_Iframe/261_Advance_Select_Pro.spec.ts.
 
 ## Prerequisites
 
