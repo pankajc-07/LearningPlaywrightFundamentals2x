@@ -67,6 +67,24 @@ Run a single spec file:
 npx playwright test tests/08_Web_Select_Frames_Iframe/261_Advance_Select_Pro.spec.ts
 ```
 
+Run the dropdown exercises:
+
+```bash
+npx playwright test tests/08_Web_Select_Frames_Iframe/Task01_DropDown.spec.ts tests/08_Web_Select_Frames_Iframe/Task02_DropDown.spec.ts
+```
+
+## Working with Dynamic Dropdowns
+
+The dropdown exercises demonstrate a reliable sequence for searchable fields:
+
+1. Locate the field using a stable attribute such as `data-testid` or `aria-label`.
+2. Click the field container and fill its descendant input.
+3. Select the exact matching suggestion from the dynamically rendered list.
+
+For example, the IndiGo exercise uses `[aria-label='sourceCity  Empty']` as the field container. A selector such as `sourceCity  Empty` is interpreted as a CSS selector and does not target that attribute, which causes Playwright to wait until the test timeout.
+
+Some travel sites use bot protection, region-specific content, or unstable HTTP/2 connections. If navigation fails with `ERR_HTTP2_PROTOCOL_ERROR`, retry the test and check the site in a normal browser. This is generally a browser, network, or remote-server issue rather than a dropdown-locator issue.
+
 ## Project Structure
 
 - tests/ - Playwright test modules and learning exercises
