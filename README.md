@@ -6,7 +6,7 @@ This repository contains Playwright learning material, practice tests, and hands
 
 The goal of this project is to provide a structured set of Playwright exercises that gradually increase in complexity. The test suite is organized by topic so learners can practice one concept at a time and build up to more advanced automation flows.
 
-## What’s Included
+## What's Included
 
 Recent additions cover:
 
@@ -15,10 +15,11 @@ Recent additions cover:
 - advanced select dropdown handling, including searchable and async select examples
 - frame and iframe automation examples
 - keyboard, hover, and drag-and-drop exercises
+- context-menu handling and advanced drag-and-drop flows
 - file upload and download scenarios
 - HTML and Allure reporting examples
 
-The current practice suite also includes examples for advanced select-box interactions in the spec file under tests/08_Web_Select_Frames_Iframe/261_Advance_Select_Pro.spec.ts.
+The current practice suite includes advanced select-box interactions in `tests/08_Web_Select_Frames_Iframe/261_Advance_Select_Pro.spec.ts`, iframe and frames exercises under `tests/09_Frame_Iframe/`, and keyboard, hover, drag-and-drop, and context-menu exercises under `tests/10_Keyboard_Hover_Drag_Drop/`.
 
 ## Prerequisites
 
@@ -71,6 +72,18 @@ Run the dropdown exercises:
 
 ```bash
 npx playwright test tests/08_Web_Select_Frames_Iframe/Task01_DropDown.spec.ts tests/08_Web_Select_Frames_Iframe/Task02_DropDown.spec.ts
+```
+
+Run the iframe exercises:
+
+```bash
+npx playwright test tests/09_Frame_Iframe
+```
+
+Run the keyboard and pointer-interaction exercises:
+
+```bash
+npx playwright test tests/10_Keyboard_Hover_Drag_Drop
 ```
 
 ## Working with Dynamic Dropdowns
