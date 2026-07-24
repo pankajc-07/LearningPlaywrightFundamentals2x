@@ -19,8 +19,9 @@ Recent additions cover:
 - JavaScript alert, confirm, and prompt handling
 - file upload and download scenarios
 - HTML and Allure reporting examples
+- SVG element interaction examples
 
-The current practice suite includes advanced select-box interactions in `tests/08_Web_Select_Frames_Iframe/261_Advance_Select_Pro.spec.ts`, iframe and frames exercises under `tests/09_Frame_Iframe/`, keyboard, hover, drag-and-drop, and context-menu exercises under `tests/10_Keyboard_Hover_Drag_Drop/`, and JavaScript dialog exercises in `tests/11_JS_Alerts/270_JS.spec.ts`.
+The current practice suite includes advanced select-box interactions in `tests/08_Web_Select_Frames_Iframe/261_Advance_Select_Pro.spec.ts`, iframe and frames exercises under `tests/09_Frame_Iframe/`, keyboard, hover, drag-and-drop, and context-menu exercises under `tests/10_Keyboard_Hover_Drag_Drop/`, JavaScript dialog exercises in `tests/11_JS_Alerts/270_JS.spec.ts`, and SVG handling examples in `tests/12_Handle_SVG/271_SVG.spec.ts`.
 
 ## Prerequisites
 
@@ -91,6 +92,12 @@ Run the JavaScript alert exercises:
 
 ```bash
 npx playwright test tests/11_JS_Alerts/270_JS.spec.ts
+```
+
+Run the hover and SVG exercises:
+
+```bash
+npx playwright test tests/10_Keyboard_Hover_Drag_Drop/Task01_HoverOverPage.spec.ts tests/12_Handle_SVG/271_SVG.spec.ts
 ```
 
 ## Working with Dynamic Dropdowns
