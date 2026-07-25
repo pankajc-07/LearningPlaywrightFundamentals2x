@@ -6,6 +6,11 @@ This repository contains Playwright learning material, practice tests, and hands
 
 The goal of this project is to provide a structured set of Playwright exercises that gradually increase in complexity. The test suite is organized by topic so learners can practice one concept at a time and build up to more advanced automation flows.
 
+## Recent Updates
+
+- Added practical SVG interaction examples in [tests/12_Handle_SVG/271_SVG.spec.ts](tests/12_Handle_SVG/271_SVG.spec.ts) for locating and interacting with SVG-based elements.
+- Expanded the learning notes to cover local test execution, browser setup, and report viewing for both HTML and Allure outputs.
+
 ## What's Included
 
 Recent additions cover:

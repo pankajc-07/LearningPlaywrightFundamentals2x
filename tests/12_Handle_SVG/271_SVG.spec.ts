@@ -60,11 +60,66 @@ test.describe("Before each and after each", () => {
 console.log("*************************************");
 
 console.log("Example 02");
+test.describe('Flipkart Search via SVG', () => {
 
+    test.beforeEach('This is before each', async ({ page }) => {
+        console.log("Before running any test case");
+        await page.goto("https://www.flipkart.com/search");
+        await page.locator("input[name='q']").fill("macmini");
+        await page.locator("//button[@type='submit']").click();
+        await page.waitForLoadState('networkidle');
+    })
 
+    test('This is Flipkart Search', async ({ page }) => {
 
+        // Product Count
+        const productList = page.locator("div[data-id]");
 
+        const TotalCount = await productList.count();
 
+        console.log(`Products total on the page : ${TotalCount}`);
 
+        // Sorting the product 
+        const products = [];
+        for (let i = 0; i < TotalCount; i++) {
+            console.log(`Product ${i + 1}`);
+            const productCard = productList.nth(i);
+            const priceCount = await productCard.locator("div.hZ3P6w").count();
+            const productTitle = await productCard.locator("a[title]").getAttribute("title");
 
+            if (priceCount === 1) {
+                const productPrice = await productCard.locator("div.hZ3P6w").innerText();
+                let cleanedPrice = productPrice.replace("₹", ""); //remove ₹ from the amount
+                cleanedPrice = cleanedPrice.replaceAll(",", ""); //remove , from the amount
+                const numericPrice = Number(cleanedPrice);
 
+                products.push({
+                    title: productTitle,
+                    price: numericPrice
+                });
+                console.log(`Product Title : ${productTitle}`);
+                console.log(`Product Price : ${numericPrice}`);
+            }
+            else {
+                const priceNotAvailable = await productCard.locator("div.Ldgg5w").innerText();
+                console.log(`Title : ${productTitle}`);
+                console.log(priceNotAvailable);
+            }
+            console.log("--------------------------");
+        }
+
+        console.log(products);
+
+        // Sort by price (Ascending)
+        products.sort((a, b) => a.price - b.price);
+
+        console.log(products);
+
+        // Cheapest Product
+        const cheapestProduct = products[0];
+        console.log("===== Cheapest Product =====");
+        console.log(`Title : ${cheapestProduct.title}`);
+        console.log(`Price : ₹${cheapestProduct.price}`);
+    });
+    //await page.pause();
+})
