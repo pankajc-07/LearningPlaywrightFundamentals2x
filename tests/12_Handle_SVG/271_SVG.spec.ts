@@ -122,4 +122,5 @@ test.describe('Flipkart Search via SVG', () => {
         console.log(`Price : ₹${cheapestProduct.price}`);
     });
     //await page.pause();
-})
+});
+

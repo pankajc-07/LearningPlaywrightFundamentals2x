@@ -8,7 +8,9 @@ The goal of this project is to provide a structured set of Playwright exercises 
 
 ## Recent Updates
 
-- Added practical SVG interaction examples in [tests/12_Handle_SVG/271_SVG.spec.ts](tests/12_Handle_SVG/271_SVG.spec.ts) for locating and interacting with SVG-based elements.
+- Added practical SVG interaction examples in [tests/12_Handle_SVG/271_SVG.spec.ts](tests/12_Handle_SVG/271_SVG.spec.ts) and [tests/12_Handle_SVG/273_Advance_SVG.spec.ts](tests/12_Handle_SVG/273_Advance_SVG.spec.ts) for locating and interacting with SVG-based elements.
+- Added shadow DOM practice coverage in [tests/13_Shadow_DOM/274_Shadow_DOM.spec.ts](tests/13_Shadow_DOM/274_Shadow_DOM.spec.ts).
+- Added file upload exercises in [tests/14_FileUpload/275_File_Upload.spec.ts](tests/14_FileUpload/275_File_Upload.spec.ts) and [tests/14_FileUpload/276_Multiple_File_Upload.spec.ts](tests/14_FileUpload/276_Multiple_File_Upload.spec.ts).
 - Expanded the learning notes to cover local test execution, browser setup, and report viewing for both HTML and Allure outputs.
 
 ## What's Included
@@ -26,7 +28,7 @@ Recent additions cover:
 - HTML and Allure reporting examples
 - SVG element interaction examples
 
-The current practice suite includes advanced select-box interactions in `tests/08_Web_Select_Frames_Iframe/261_Advance_Select_Pro.spec.ts`, iframe and frames exercises under `tests/09_Frame_Iframe/`, keyboard, hover, drag-and-drop, and context-menu exercises under `tests/10_Keyboard_Hover_Drag_Drop/`, JavaScript dialog exercises in `tests/11_JS_Alerts/270_JS.spec.ts`, and SVG handling examples in `tests/12_Handle_SVG/271_SVG.spec.ts`.
+The current practice suite includes advanced select-box interactions in `tests/08_Web_Select_Frames_Iframe/261_Advance_Select_Pro.spec.ts`, iframe and frames exercises under `tests/09_Frame_Iframe/`, keyboard, hover, drag-and-drop, and context-menu exercises under `tests/10_Keyboard_Hover_Drag_Drop/`, JavaScript dialog exercises in `tests/11_JS_Alerts/270_JS.spec.ts`, SVG handling examples in `tests/12_Handle_SVG/`, shadow DOM practice in `tests/13_Shadow_DOM/274_Shadow_DOM.spec.ts`, and file upload scenarios in `tests/14_FileUpload/`.
 
 ## Prerequisites
 
