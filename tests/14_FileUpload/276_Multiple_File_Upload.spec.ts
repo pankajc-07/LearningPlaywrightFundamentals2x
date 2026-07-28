@@ -11,8 +11,6 @@ test.describe('FileUpload handling', () => {
 
     test('locate FileUpload and upload', async ({ page }) => {
 
-
-
         await page.locator("div.pf-v6-c-multiple-file-upload input").setInputFiles(
             [{
                 name: 'file1.jpg',
@@ -28,14 +26,8 @@ test.describe('FileUpload handling', () => {
             ]);
 
         await page.locator(".pf-v6-c-button pf-m-secondary").click();
-
-
-
         await page.waitForTimeout(15000);
-
-
-
-
-
     });
+});
+
 

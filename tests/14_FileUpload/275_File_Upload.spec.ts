@@ -1,28 +1,25 @@
-import { test, expect, Locator } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import path from 'path';
+import fs from 'fs';
+import { fileURLToPath } from 'url';
 
-const URL = 'https://the-internet.herokuapp.com/upload'; // replace with target page
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const URL = 'https://the-internet.herokuapp.com/upload';
+
+// Create test file before all tests
+if (!fs.existsSync(path.join(__dirname, 'testdata.txt'))) {
+    fs.writeFileSync(path.join(__dirname, 'testdata.txt'), 'Test file content');
+}
 
 test.describe('FileUpload handling', () => {
-
-    test.beforeEach(async ({ page }) => {
+    test('should upload file successfully', async ({ page }) => {
         await page.goto(URL);
-    });
-
-    test('locate FileUpload and upload', async ({ page }) => {
 
         const filePath = path.join(__dirname, 'testdata.txt');
-        console.log('File path:', filePath);
-
         await page.setInputFiles('#file-upload', filePath);
         await page.click('#file-submit');
 
         await expect(page.locator('h3')).toHaveText('File Uploaded!');
         await expect(page.locator('#uploaded-files')).toHaveText('testdata.txt');
-        await page.pause();
-        await page.waitForTimeout(15000);
-
-
     });
-
 });

@@ -13,6 +13,20 @@ The goal of this project is to provide a structured set of Playwright exercises 
 - Added file upload exercises in [tests/14_FileUpload/275_File_Upload.spec.ts](tests/14_FileUpload/275_File_Upload.spec.ts) and [tests/14_FileUpload/276_Multiple_File_Upload.spec.ts](tests/14_FileUpload/276_Multiple_File_Upload.spec.ts).
 - Expanded the learning notes to cover local test execution, browser setup, and report viewing for both HTML and Allure outputs.
 
+## File Upload Practice
+
+The file-upload exercises now include both single-file and multi-file scenarios:
+
+- Single-file upload flow in [tests/14_FileUpload/275_File_Upload.spec.ts](tests/14_FileUpload/275_File_Upload.spec.ts)
+- Multiple-file upload flow in [tests/14_FileUpload/276_Multiple_File_Upload.spec.ts](tests/14_FileUpload/276_Multiple_File_Upload.spec.ts)
+
+Run them directly with:
+
+```bash
+npx playwright test tests/14_FileUpload/275_File_Upload.spec.ts
+npx playwright test tests/14_FileUpload/276_Multiple_File_Upload.spec.ts
+```
+
 ## What's Included
 
 Recent additions cover:
