@@ -14,9 +14,7 @@ test.describe('Shadow handling', () => {
         await card.locator('input[name="email"]').fill('student@thetestingacademy.com');
         await card.locator('input[name="password"]').fill('pw');
         await card.getByTestId('card-account-submit').click();
-        await expect(page.getByTestId('card-account-status'))
-            .toContainText('student@thetestingacademy.com');
-
+        await expect(page.getByTestId('card-account-status')).toContainText('student@thetestingacademy.com');
 
         const cart = page.getByTestId('counter-cart');
         await cart.getByRole('button', { name: 'Increment' }).click();
@@ -27,13 +25,45 @@ test.describe('Shadow handling', () => {
         await page.getByTestId('card-inside-email').fill('pramod@thetestingacdemy.com');
         await page.getByTestId('card-inside-password').fill('pramod@123');
         await page.getByTestId('card-inside-submit').click();
-
-
-
-
-
     });
-
-
-
 });
+console.log("*************************");
+
+//Practical examples 
+console.log("Example number 01");
+
+const URL01 = "https://app.thetestingacademy.com/playwright/widgets/shadow-dom";
+
+test.describe('Shadow Dome Handling', () => {
+
+    test.beforeEach(async ({ page }) => {
+        await page.goto(URL01);
+    })
+
+    test('Locate Shadow DOM and Assert Visible', async ({ page }) => {
+
+        const card = page.getByTestId("card-account");
+        await card.locator('input[name="email"]').fill("student@thetestingacademy.com");
+        await card.locator('input[name="password"]').fill("pw");
+        await card.getByTestId("card-account-submit").click();
+        await expect(page.getByTestId('card-account-status')).toContainText("student@thetestingacademy.com");
+
+        const cart = page.getByTestId("counter-cart");
+        await cart.getByRole('button', { name: 'Increment' }).click();
+        await cart.getByRole('button', { name: 'Increment' }).click();
+        await expect(cart.getByTestId("counter-value")).toHaveText('5');
+
+        // await page.getByTestId("nested-host");
+        // await page.getByTestId("card-inside-email").fill("pramod@thetestingacdemy.com");
+        // await page.getByTestId("card-inside-password").fill("pramod@123");
+        // await page.getByTestId("card-inside-submit").click();
+
+        const outShadow = page.getByTestId("nested-host");
+        await outShadow.locator('input[name="email"]').fill("pramod@thetestingacdemy.com");
+        await outShadow.locator('input[name="password"]').fill("pramod@123");
+        await outShadow.getByTestId('card-inside-submit').click();
+
+        await page.pause();
+    })
+})
+

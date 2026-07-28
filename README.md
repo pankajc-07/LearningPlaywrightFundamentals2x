@@ -13,6 +13,14 @@ The goal of this project is to provide a structured set of Playwright exercises 
 - Added file upload exercises in [tests/14_FileUpload/275_File_Upload.spec.ts](tests/14_FileUpload/275_File_Upload.spec.ts) and [tests/14_FileUpload/276_Multiple_File_Upload.spec.ts](tests/14_FileUpload/276_Multiple_File_Upload.spec.ts).
 - Expanded the learning notes to cover local test execution, browser setup, and report viewing for both HTML and Allure outputs.
 
+## Shadow DOM Practice
+
+A dedicated shadow DOM exercise is available in [tests/13_Shadow_DOM/274_Shadow_DOM.spec.ts](tests/13_Shadow_DOM/274_Shadow_DOM.spec.ts). Run it with:
+
+```bash
+npx playwright test tests/13_Shadow_DOM/274_Shadow_DOM.spec.ts
+```
+
 ## File Upload Practice
 
 The file-upload exercises now include both single-file and multi-file scenarios:
