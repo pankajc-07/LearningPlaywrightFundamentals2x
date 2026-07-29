@@ -11,6 +11,7 @@ The goal of this project is to provide a structured set of Playwright exercises 
 - Added practical SVG interaction examples in [tests/12_Handle_SVG/271_SVG.spec.ts](tests/12_Handle_SVG/271_SVG.spec.ts) and [tests/12_Handle_SVG/273_Advance_SVG.spec.ts](tests/12_Handle_SVG/273_Advance_SVG.spec.ts) for locating and interacting with SVG-based elements.
 - Added shadow DOM practice coverage in [tests/13_Shadow_DOM/274_Shadow_DOM.spec.ts](tests/13_Shadow_DOM/274_Shadow_DOM.spec.ts).
 - Added file upload exercises in [tests/14_FileUpload/275_File_Upload.spec.ts](tests/14_FileUpload/275_File_Upload.spec.ts) and [tests/14_FileUpload/276_Multiple_File_Upload.spec.ts](tests/14_FileUpload/276_Multiple_File_Upload.spec.ts).
+- Added file download and scroll-to-element practice in [tests/15_File_Download/277_File_Download.spec.ts](tests/15_File_Download/277_File_Download.spec.ts) and [tests/16_Scroll_toElement/278_ScrollToView.spec.ts](tests/16_Scroll_toElement/278_ScrollToView.spec.ts).
 - Expanded the learning notes to cover local test execution, browser setup, and report viewing for both HTML and Allure outputs.
 
 ## Shadow DOM Practice
