@@ -11,7 +11,9 @@ The goal of this project is to provide a structured set of Playwright exercises 
 - Added practical SVG interaction examples in [tests/12_Handle_SVG/271_SVG.spec.ts](tests/12_Handle_SVG/271_SVG.spec.ts) and [tests/12_Handle_SVG/273_Advance_SVG.spec.ts](tests/12_Handle_SVG/273_Advance_SVG.spec.ts) for locating and interacting with SVG-based elements.
 - Added shadow DOM practice coverage in [tests/13_Shadow_DOM/274_Shadow_DOM.spec.ts](tests/13_Shadow_DOM/274_Shadow_DOM.spec.ts).
 - Added file upload exercises in [tests/14_FileUpload/275_File_Upload.spec.ts](tests/14_FileUpload/275_File_Upload.spec.ts) and [tests/14_FileUpload/276_Multiple_File_Upload.spec.ts](tests/14_FileUpload/276_Multiple_File_Upload.spec.ts).
-- Added file download and scroll-to-element practice in [tests/15_File_Download/277_File_Download.spec.ts](tests/15_File_Download/277_File_Download.spec.ts) and [tests/16_Scroll_toElement/278_ScrollToView.spec.ts](tests/16_Scroll_toElement/278_ScrollToView.spec.ts).
+- Added file download and scroll-to-element practice in [tests/15_File_Download/277_File_Download.spec.ts](tests/15_File_Download/277_File_Download.spec.ts), [tests/15_File_Download/Task_Upload_Download.spec.ts](tests/15_File_Download/Task_Upload_Download.spec.ts), and [tests/16_Scroll_toElement/278_ScrollToView.spec.ts](tests/16_Scroll_toElement/278_ScrollToView.spec.ts).
+- Added multiple expect/assertion practice files under [tests/17_Expect_Assertions/](tests/17_Expect_Assertions/) including the interview-oriented cheatsheet in [tests/17_Expect_Assertions/283_Expect.cheatsheet.md](tests/17_Expect_Assertions/283_Expect.cheatsheet.md).
+- Added Playwright hook and suite organization examples in [tests/18_Test_hooks/284_Test_Hook.spec.ts](tests/18_Test_hooks/284_Test_Hook.spec.ts), [tests/18_Test_hooks/286_Test_Hook_Cheatsheet.md](tests/18_Test_hooks/286_Test_Hook_Cheatsheet.md), [tests/18_Test_hooks/287_Group.spec.ts](tests/18_Test_hooks/287_Group.spec.ts), [tests/18_Test_hooks/288_Befre_After.spec.ts](tests/18_Test_hooks/288_Befre_After.spec.ts), [tests/18_Test_hooks/289_TestDescribe.spec.ts](tests/18_Test_hooks/289_TestDescribe.spec.ts), and [tests/18_Test_hooks/290_TestPriority.spec.ts](tests/18_Test_hooks/290_TestPriority.spec.ts).
 - Expanded the learning notes to cover local test execution, browser setup, and report viewing for both HTML and Allure outputs.
 
 ## Shadow DOM Practice
@@ -48,10 +50,12 @@ Recent additions cover:
 - context-menu handling and advanced drag-and-drop flows
 - JavaScript alert, confirm, and prompt handling
 - file upload and download scenarios
+- assertion and expectation practice
+- test hooks, grouping, and priority workflows
 - HTML and Allure reporting examples
 - SVG element interaction examples
 
-The current practice suite includes advanced select-box interactions in `tests/08_Web_Select_Frames_Iframe/261_Advance_Select_Pro.spec.ts`, iframe and frames exercises under `tests/09_Frame_Iframe/`, keyboard, hover, drag-and-drop, and context-menu exercises under `tests/10_Keyboard_Hover_Drag_Drop/`, JavaScript dialog exercises in `tests/11_JS_Alerts/270_JS.spec.ts`, SVG handling examples in `tests/12_Handle_SVG/`, shadow DOM practice in `tests/13_Shadow_DOM/274_Shadow_DOM.spec.ts`, and file upload scenarios in `tests/14_FileUpload/`.
+The current practice suite includes advanced select-box interactions in `tests/08_Web_Select_Frames_Iframe/261_Advance_Select_Pro.spec.ts`, iframe and frames exercises under `tests/09_Frame_Iframe/`, keyboard, hover, drag-and-drop, and context-menu exercises under `tests/10_Keyboard_Hover_Drag_Drop/`, JavaScript dialog exercises in `tests/11_JS_Alerts/270_JS.spec.ts`, SVG handling examples in `tests/12_Handle_SVG/`, shadow DOM practice in `tests/13_Shadow_DOM/274_Shadow_DOM.spec.ts`, file upload scenarios in `tests/14_FileUpload/`, file download and upload tasks in `tests/15_File_Download/`, assertion examples in `tests/17_Expect_Assertions/`, and hook-focused learning exercises in `tests/18_Test_hooks/`.
 
 ## Prerequisites
 
@@ -128,6 +132,13 @@ Run the hover and SVG exercises:
 
 ```bash
 npx playwright test tests/10_Keyboard_Hover_Drag_Drop/Task01_HoverOverPage.spec.ts tests/12_Handle_SVG/271_SVG.spec.ts
+```
+
+Run the expectation and hook practice suites:
+
+```bash
+npx playwright test tests/17_Expect_Assertions
+npx playwright test tests/18_Test_hooks
 ```
 
 ## Working with Dynamic Dropdowns

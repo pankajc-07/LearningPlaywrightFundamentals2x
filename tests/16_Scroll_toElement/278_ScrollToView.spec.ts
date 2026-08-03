@@ -102,23 +102,11 @@ test.describe('Page scroll', () => {
             timeout: 10000
         }).toBeGreaterThan(initalCount);
 
-
         const finalCount = await list.count();
         console.log(finalCount);
 
-
         await page.pause()
     })
-
-
-
-
-
 })
-
-
-
-
-
 
 
