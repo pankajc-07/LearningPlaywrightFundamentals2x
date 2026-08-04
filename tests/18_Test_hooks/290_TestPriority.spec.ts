@@ -30,6 +30,8 @@ test('Login test @p1 @smoke', async ({ page }) => {
 
 test('Profile test @p2', async ({ page }) => {
     await page.goto('https://app.vwo.com');
+    console.log("This is using tag @p2");
+
 });
 
 test('Settings test @p3', async ({ page }) => {
@@ -37,3 +39,7 @@ test('Settings test @p3', async ({ page }) => {
 });
 
 // npx playwright test --grep @p1
+console.log("*************************");
+
+//Practical examples 
+console.log("Example number 01");

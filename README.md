@@ -13,7 +13,7 @@ The goal of this project is to provide a structured set of Playwright exercises 
 - Added file upload exercises in [tests/14_FileUpload/275_File_Upload.spec.ts](tests/14_FileUpload/275_File_Upload.spec.ts) and [tests/14_FileUpload/276_Multiple_File_Upload.spec.ts](tests/14_FileUpload/276_Multiple_File_Upload.spec.ts).
 - Added file download and scroll-to-element practice in [tests/15_File_Download/277_File_Download.spec.ts](tests/15_File_Download/277_File_Download.spec.ts), [tests/15_File_Download/Task_Upload_Download.spec.ts](tests/15_File_Download/Task_Upload_Download.spec.ts), and [tests/16_Scroll_toElement/278_ScrollToView.spec.ts](tests/16_Scroll_toElement/278_ScrollToView.spec.ts).
 - Added multiple expect/assertion practice files under [tests/17_Expect_Assertions/](tests/17_Expect_Assertions/) including the interview-oriented cheatsheet in [tests/17_Expect_Assertions/283_Expect.cheatsheet.md](tests/17_Expect_Assertions/283_Expect.cheatsheet.md).
-- Added Playwright hook and suite organization examples in [tests/18_Test_hooks/284_Test_Hook.spec.ts](tests/18_Test_hooks/284_Test_Hook.spec.ts), [tests/18_Test_hooks/286_Test_Hook_Cheatsheet.md](tests/18_Test_hooks/286_Test_Hook_Cheatsheet.md), [tests/18_Test_hooks/287_Group.spec.ts](tests/18_Test_hooks/287_Group.spec.ts), [tests/18_Test_hooks/288_Befre_After.spec.ts](tests/18_Test_hooks/288_Befre_After.spec.ts), [tests/18_Test_hooks/289_TestDescribe.spec.ts](tests/18_Test_hooks/289_TestDescribe.spec.ts), and [tests/18_Test_hooks/290_TestPriority.spec.ts](tests/18_Test_hooks/290_TestPriority.spec.ts).
+- Added Playwright hook and suite organization examples in [tests/18_Test_hooks/284_Test_Hook.spec.ts](tests/18_Test_hooks/284_Test_Hook.spec.ts), [tests/18_Test_hooks/286_Test_Hook_Cheatsheet.md](tests/18_Test_hooks/286_Test_Hook_Cheatsheet.md), [tests/18_Test_hooks/287_Group.spec.ts](tests/18_Test_hooks/287_Group.spec.ts), [tests/18_Test_hooks/288_Before_After.spec.ts](tests/18_Test_hooks/288_Before_After.spec.ts), [tests/18_Test_hooks/289_TestDescribe.spec.ts](tests/18_Test_hooks/289_TestDescribe.spec.ts), and [tests/18_Test_hooks/290_TestPriority.spec.ts](tests/18_Test_hooks/290_TestPriority.spec.ts).
 - Expanded the learning notes to cover local test execution, browser setup, and report viewing for both HTML and Allure outputs.
 
 ## Shadow DOM Practice
@@ -140,6 +140,14 @@ Run the expectation and hook practice suites:
 npx playwright test tests/17_Expect_Assertions
 npx playwright test tests/18_Test_hooks
 ```
+
+Run the tagged hook-priority examples from PowerShell using a quoted tag filter:
+
+```powershell
+npx playwright test --grep '@p2'
+```
+
+This avoids PowerShell treating `@p2` as a variable expression and keeps the tag literal so Playwright can match the test correctly.
 
 ## Working with Dynamic Dropdowns
 
