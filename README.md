@@ -116,6 +116,12 @@ Run the iframe exercises:
 npx playwright test tests/09_Frame_Iframe
 ```
 
+Run a specific data-driven test file:
+
+```bash
+npx playwright test tests/19_Data_Driven_Testing/298_JSON_DDT.spec.ts
+```
+
 Run the keyboard and pointer-interaction exercises:
 
 ```bash
