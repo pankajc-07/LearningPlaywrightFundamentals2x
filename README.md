@@ -122,6 +122,12 @@ Run a specific data-driven test file:
 npx playwright test tests/19_Data_Driven_Testing/298_JSON_DDT.spec.ts
 ```
 
+Run a YAML-driven data-driven test example:
+
+```bash
+npx playwright test tests/19_Data_Driven_Testing/299_DDT_YAML.spec.ts
+```
+
 Run the keyboard and pointer-interaction exercises:
 
 ```bash
