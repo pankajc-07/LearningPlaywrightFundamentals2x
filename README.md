@@ -14,6 +14,8 @@ The goal of this project is to provide a structured set of Playwright exercises 
 - Added file download and scroll-to-element practice in [tests/15_File_Download/277_File_Download.spec.ts](tests/15_File_Download/277_File_Download.spec.ts), [tests/15_File_Download/Task_Upload_Download.spec.ts](tests/15_File_Download/Task_Upload_Download.spec.ts), and [tests/16_Scroll_toElement/278_ScrollToView.spec.ts](tests/16_Scroll_toElement/278_ScrollToView.spec.ts).
 - Added multiple expect/assertion practice files under [tests/17_Expect_Assertions/](tests/17_Expect_Assertions/) including the interview-oriented cheatsheet in [tests/17_Expect_Assertions/283_Expect.cheatsheet.md](tests/17_Expect_Assertions/283_Expect.cheatsheet.md).
 - Added Playwright hook and suite organization examples in [tests/18_Test_hooks/284_Test_Hook.spec.ts](tests/18_Test_hooks/284_Test_Hook.spec.ts), [tests/18_Test_hooks/286_Test_Hook_Cheatsheet.md](tests/18_Test_hooks/286_Test_Hook_Cheatsheet.md), [tests/18_Test_hooks/287_Group.spec.ts](tests/18_Test_hooks/287_Group.spec.ts), [tests/18_Test_hooks/288_Before_After.spec.ts](tests/18_Test_hooks/288_Before_After.spec.ts), [tests/18_Test_hooks/289_TestDescribe.spec.ts](tests/18_Test_hooks/289_TestDescribe.spec.ts), and [tests/18_Test_hooks/290_TestPriority.spec.ts](tests/18_Test_hooks/290_TestPriority.spec.ts).
+- Added FakerJS data-driven registration examples in [tests/19_Data_Driven_Testing/302_DDT_FakerJS.spec.ts](tests/19_Data_Driven_Testing/302_DDT_FakerJS.spec.ts), [tests/19_Data_Driven_Testing/303_DDT_FakerJS_Advance.spec.ts](tests/19_Data_Driven_Testing/303_DDT_FakerJS_Advance.spec.ts), and [tests/19_Data_Driven_Testing/304_DDT_FakeJS.spec.ts](tests/19_Data_Driven_Testing/304_DDT_FakeJS.spec.ts).
+- Added page-object model examples in [tests/20_Page_Object_Model/305_No.POM.spec.ts](tests/20_Page_Object_Model/305_No.POM.spec.ts) and [tests/20_Page_Object_Model/306_POM.spec.ts](tests/20_Page_Object_Model/306_POM.spec.ts), with reusable page classes in the same directory.
 - Expanded the learning notes to cover local test execution, browser setup, and report viewing for both HTML and Allure outputs.
 
 ## Shadow DOM Practice
@@ -52,6 +54,8 @@ Recent additions cover:
 - file upload and download scenarios
 - assertion and expectation practice
 - test hooks, grouping, and priority workflows
+- FakerJS-powered test data generation
+- page-object model organization
 - HTML and Allure reporting examples
 - SVG element interaction examples
 
@@ -120,6 +124,18 @@ Run a specific data-driven test file:
 
 ```bash
 npx playwright test tests/19_Data_Driven_Testing/298_JSON_DDT.spec.ts
+```
+
+Run the FakerJS data-driven examples:
+
+```bash
+npx playwright test tests/19_Data_Driven_Testing/302_DDT_FakerJS.spec.ts tests/19_Data_Driven_Testing/303_DDT_FakerJS_Advance.spec.ts tests/19_Data_Driven_Testing/304_DDT_FakeJS.spec.ts
+```
+
+Run the page-object model examples:
+
+```bash
+npx playwright test tests/20_Page_Object_Model
 ```
 
 Run a YAML-driven data-driven test example:

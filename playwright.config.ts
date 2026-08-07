@@ -14,7 +14,8 @@ import { CustomReporter } from './utils/CustomReporter';
  */
 export default defineConfig({
   testDir: './tests',
-  testMatch: ['tests/**/*.spec.ts'],
+  // testMatch: ['tests/**/*.spec.ts'],
+  testMatch: ['**/*.spec.ts'],
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
