@@ -19,3 +19,27 @@ export class Loginpage {
         await this.page.goto("https://app.thetestingacademy.com/playwright/ttacart/");
     }
 }
+console.log("*************************");
+
+//Practical examples
+console.log("Example number 01");
+
+// import { Locator, Page } from '@playwright/test';
+
+// export class Loginpage02 {
+//     readonly page: Page;
+//     readonly ttacart: Locator;
+//     readonly addToCartTestAllthethings: Locator;
+//     readonly itemTestAllthethingsTshirtRed: Locator;
+
+//     constructor(page: Page) {
+//         this.page = page;
+//         this.ttacart = page.getByText("TTACart");
+//         this.addToCartTestAllthethings = page.getByTestId("add-to-cart-test-allthethings-tshirt-red").or(page.getByRole("button", { name: "Add to cart" })).or(page.getByText("Add to cart"));
+//         this.itemTestAllthethingsTshirtRed = page.getByTestId("item-test-allthethings-tshirt-red-title-link").or(page.getByRole("link", { name: "Test.allTheThings() T-Shirt (Red)" })).or(page.getByText("Test.allTheThings() T-Shirt (Red)"));
+//     }
+
+//     async goto() {
+//         await this.page.goto("https://app.thetestingacademy.com/playwright/ttacart/");
+//     }
+// }

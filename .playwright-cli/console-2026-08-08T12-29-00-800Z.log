@@ -1,0 +1,19 @@
+[    2362ms] [LOG] WiserNotify pixel installed multiple time in this page @ https://courses.thetestingacademy.com/:40
+[    8812ms] [LOG]  @ https://cdn.newzenler.com/js/default/site.js?v=V3.8.00015:2806
+[    9711ms] [ERROR] Failed to load resource: the server responded with a status of 419 (unknown status) @ https://courses.thetestingacademy.com/get-paypal-attributes:0
+[   11034ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://cdn.newzenler.com/login?redirecturl=elements/bundles/Zenler/bundles/af7ae505a9eed503f8b8e6982036873e.woff2:0
+[   12518ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://cdn.newzenler.com/login?redirecturl=elements/bundles/Zenler/bundles/fee66e712a8a08eef5805a46892932ad.woff:0
+[   14776ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://cdn.newzenler.com/login?redirecturl=elements/bundles/Zenler/bundles/b06871f281fee6b241d60582ae9369b9.ttf:0
+[   16135ms] [LOG] JSHandle@node @ https://app.interakt.ai/kiwi-sdk/kiwi-sdk-17-prod-min.js?v=1786192143157:0
+[12656068ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://www.youtube.com/generate_204:0
+[12656072ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://www.youtube.com/generate_204:0
+[12656073ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://www.youtube.com/generate_204:0
+[13653166ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://www.youtube.com/generate_204:0
+[13653264ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://www.youtube.com/generate_204:0
+[13653264ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://www.youtube.com/generate_204:0
+[13679478ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://www.youtube.com/generate_204:0
+[13679479ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://www.youtube.com/generate_204:0
+[13679479ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://www.youtube.com/generate_204:0
+[13685550ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://www.youtube.com/generate_204:0
+[13685583ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://www.youtube.com/generate_204:0
+[13685584ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://www.youtube.com/generate_204:0

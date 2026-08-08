@@ -1,0 +1,310 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - text: 
+          - link [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img "TheTestingAcademy" [ref=e9]
+        - generic [ref=e10]:
+          - list [ref=e11]:
+            - listitem [ref=e12]:
+              - link "HOME" [ref=e13] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e14]:
+              - link "ALL COURSES" [ref=e15] [cursor=pointer]:
+                - /url: /courses
+            - listitem [ref=e16]:
+              - link "SUPPORT" [ref=e17] [cursor=pointer]:
+                - /url: /support
+            - listitem [ref=e18]:
+              - link "CALENDAR" [ref=e19] [cursor=pointer]:
+                - /url: /calendar
+            - listitem [ref=e20]:
+              - link "BLOG" [ref=e21] [cursor=pointer]:
+                - /url: /blog
+          - link "Sign In" [ref=e24] [cursor=pointer]:
+            - /url: /login
+    - generic [ref=e30]:
+      - paragraph [ref=e32]: Become a Job Ready Software Tester.
+      - paragraph [ref=e34]: Online Software Testing & Automation courses to make you industry ready
+      - link "Yes, I want to Learn... " [ref=e36] [cursor=pointer]:
+        - /url: "#zenPopupModal"
+        - text: Yes, I want to Learn...
+        - generic [ref=e37]: 
+    - generic [ref=e46]:
+      - heading [level=1] [ref=e48]:
+        - text: Learn in-demand
+        - strong [ref=e49]: Automation testing
+        - text: skills with Pramod Dutta 🔊
+      - heading "Crack Your Dream Company...." [level=1] [ref=e51]
+      - link "Yes, I want to Learn... " [ref=e58] [cursor=pointer]:
+        - /url: "#zenPopupModal"
+        - text: Yes, I want to Learn...
+        - generic [ref=e59]: 
+    - generic [ref=e62]:
+      - generic [ref=e65]:
+        - generic [ref=e66]: 
+        - heading "Live Classes with Recordings(Lifetime)" [level=5] [ref=e69]
+      - generic [ref=e72]:
+        - generic [ref=e73]: 
+        - heading "Work on Real Projects & Ideas" [level=5] [ref=e76]
+      - generic [ref=e79]:
+        - generic [ref=e80]: 
+        - heading "Live Doubt Solving Sessions" [level=5] [ref=e83]
+      - generic [ref=e86]:
+        - generic [ref=e87]: 
+        - heading "Manual & Automation Roadmaps" [level=5] [ref=e90]
+    - generic [ref=e100]:
+      - heading "Meet your Instructor 👋 Pramod Dutta (Lead SDET)" [level=3] [ref=e102]
+      - paragraph [ref=e104]:
+        - text: Founder of The Testing Academy, a YouTube Channel with 80K subscribers where Pramod teaches about Software testing & Test Automation.With overall
+        - strong [ref=e105]: 10+ years of experience in Software Testing & Test Automation
+        - text: ", he has mentored 10,000+ students in Software Testing, API Testing, Test Automation. Pramod Dutta is working as SDET Manager at Tekion | Ex BrowserStack Employee & BrowserStack Champion & Certified Scrum Master.Pramod has a"
+        - strong [ref=e106]: vast range of experience handling from Manual Testing, Mobile & Web Automation, Desktop & cloud services like AWS, GCP extra.
+        - text: By joining this Automation Testing Course , you’ll have the opportunity to take control of your life, work in an exciting industry with infinite possibilities and live the life you want.
+      - link "Become Software QA" [ref=e108] [cursor=pointer]:
+        - /url: "#zenPopupModal"
+    - generic [ref=e114]:
+      - heading "All Courses" [level=1] [ref=e116]
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - generic [ref=e119]: Category
+          - combobox [ref=e120]:
+            - option "All" [selected]
+            - option "Software Testing"
+            - option "Web Automation"
+            - option "API Testing"
+            - option "Interviews"
+            - option "CI/CD"
+            - option "Self Paced"
+            - option "LIVE"
+        - generic [ref=e123]:
+          - textbox "Search Course" [ref=e124]
+          - button "" [ref=e125] [cursor=pointer]
+      - generic [ref=e127]:
+        - link "course image author Pramod Dutta 4999 INR Build Agentic AI & Multi-Agent System for Software Testing ... Build autonomous testing agents and multi-agent systems with CrewAI and LangChain." [ref=e130] [cursor=pointer]:
+          - /url: /courses/build-agentic-ai-multi-agent-system-for-software-testing-crew-ai-langchain
+          - generic [ref=e131]:
+            - img "course image" [ref=e133]
+            - generic [ref=e134]:
+              - img "author" [ref=e135]
+              - generic [ref=e136]:
+                - text: Pramod Dutta
+                - generic [ref=e137]: 4999 INR
+          - generic [ref=e138]:
+            - heading "Build Agentic AI & Multi-Agent System for Software Testing ..." [level=4] [ref=e139]
+            - paragraph [ref=e140]: Build autonomous testing agents and multi-agent systems with CrewAI and LangChain.
+        - link "course image author Pramod Dutta 4999 INR E2E Testing ChatBot, AI Agent, RAG, MCP Server with ... Test and evaluate LLM apps, chatbots, AI agents, RAG pipelines, and MCP servers with DeepEval." [ref=e145] [cursor=pointer]:
+          - /url: /courses/e2e-testing-chatbot-ai-agent-rag-mcp-server-with-deepeval-framework
+          - generic [ref=e146]:
+            - img "course image" [ref=e148]
+            - generic [ref=e149]:
+              - img "author" [ref=e150]
+              - generic [ref=e151]:
+                - text: Pramod Dutta
+                - generic [ref=e152]: 4999 INR
+          - generic [ref=e153]:
+            - heading "E2E Testing ChatBot, AI Agent, RAG, MCP Server with ..." [level=4] [ref=e154]
+            - paragraph [ref=e155]: Test and evaluate LLM apps, chatbots, AI agents, RAG pipelines, and MCP servers with DeepEval.
+        - link "course image author Pramod Dutta 4999 INR Cursor Masterclass for QA Supercharge test automation inside Cursor, the AI-first code editor built for speed." [ref=e160] [cursor=pointer]:
+          - /url: /courses/cursor-masterclass-for-qa
+          - generic [ref=e161]:
+            - img "course image" [ref=e163]
+            - generic [ref=e164]:
+              - img "author" [ref=e165]
+              - generic [ref=e166]:
+                - text: Pramod Dutta
+                - generic [ref=e167]: 4999 INR
+          - generic [ref=e168]:
+            - heading "Cursor Masterclass for QA" [level=4] [ref=e169]
+            - paragraph [ref=e170]: Supercharge test automation inside Cursor, the AI-first code editor built for speed.
+        - link "course image author Pramod Dutta 4999 INR Skill Masterclass for QA Build reusable AI Skills that turn Claude into a testing specialist for your whole team." [ref=e175] [cursor=pointer]:
+          - /url: /courses/skill-masterclass-for-qa
+          - generic [ref=e176]:
+            - img "course image" [ref=e178]
+            - generic [ref=e179]:
+              - img "author" [ref=e180]
+              - generic [ref=e181]:
+                - text: Pramod Dutta
+                - generic [ref=e182]: 4999 INR
+          - generic [ref=e183]:
+            - heading "Skill Masterclass for QA" [level=4] [ref=e184]
+            - paragraph [ref=e185]: Build reusable AI Skills that turn Claude into a testing specialist for your whole team.
+        - link "course image author Pramod Dutta 4999 INR GitHub Co-Pilot for QA Generate, refactor, and maintain automated tests with GitHub Copilot, your AI pair programmer." [ref=e190] [cursor=pointer]:
+          - /url: /courses/github-co-pilot-for-qa
+          - generic [ref=e191]:
+            - img "course image" [ref=e193]
+            - generic [ref=e194]:
+              - img "author" [ref=e195]
+              - generic [ref=e196]:
+                - text: Pramod Dutta
+                - generic [ref=e197]: 4999 INR
+          - generic [ref=e198]:
+            - heading "GitHub Co-Pilot for QA" [level=4] [ref=e199]
+            - paragraph [ref=e200]: Generate, refactor, and maintain automated tests with GitHub Copilot, your AI pair programmer.
+        - link "course image author Pramod Dutta 4999 INR Claude Code for QA Automate testing with Anthropic's agentic AI coding assistant, right inside your terminal." [ref=e205] [cursor=pointer]:
+          - /url: /courses/claude-code-for-qa
+          - generic [ref=e206]:
+            - img "course image" [ref=e208]
+            - generic [ref=e209]:
+              - img "author" [ref=e210]
+              - generic [ref=e211]:
+                - text: Pramod Dutta
+                - generic [ref=e212]: 4999 INR
+          - generic [ref=e213]:
+            - heading "Claude Code for QA" [level=4] [ref=e214]
+            - paragraph [ref=e215]: Automate testing with Anthropic's agentic AI coding assistant, right inside your terminal.
+      - link "Load more" [ref=e218] [cursor=pointer]:
+        - /url: javascript:;
+    - generic [ref=e220]:
+      - generic [ref=e223]:
+        - 'heading "Reviews of Courses : What Other People are Saying..." [level=1] [ref=e225]': Reviews of Courses :What Other People are Saying...
+        - paragraph [ref=e227]: Our wall of love has real reviews from real people who have done the courses are now placed in many IT companies.
+      - iframe [ref=e232]:
+        - main [ref=f1e2]:
+          - generic [ref=f1e4]:
+            - main [ref=f1e5]:
+              - generic [ref=f1e6]: Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode Theatre mode
+            - link "Testimonial branding" [ref=f1e18] [cursor=pointer]:
+              - /url: https://testimonial.to?via=widgets
+              - img "Logo" [ref=f1e19]
+      - generic [ref=e233]:
+        - generic [ref=e235]:
+          - heading "Job Ready Automation Tester with Java" [level=2] [ref=e237]
+          - paragraph [ref=e241]: How to become an Automation Tester with Roadmap and Blueprint.
+        - iframe [ref=e246]:
+          - generic [ref=f2e1]:
+            - generic "YouTube Video Player" [ref=f2e3]
+            - generic [ref=f2e5]:
+              - generic:
+                - generic:
+                  - generic [ref=f2e6] [cursor=pointer]
+                  - button "Play video" [ref=f2e10] [cursor=pointer]
+                  - button "Hide player controls" [ref=f2e12] [cursor=pointer]
+                  - generic [ref=f2e14]:
+                    - generic [ref=f2e19]:
+                      - generic [ref=f2e20]:
+                        - link "🔥 My LIVE Course to Become a Job Ready Automation Tester with Java Announcement." [ref=f2e21] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=JUuoRXU0yaM
+                        - link "The Testing Academy" [ref=f2e22] [cursor=pointer]:
+                          - /url: /channel/UC2TpiJFaC0f4_5GopyMkDdQ
+                      - generic [ref=f2e24]:
+                        - button [ref=f2e25] [cursor=pointer]
+                        - generic [ref=f2e27]:
+                          - generic: The Testing Academy
+                          - generic: 206K subscribers
+                    - generic [ref=f2e28]:
+                      - button "Share" [ref=f2e31] [cursor=pointer]
+                      - link "Watch on YouTube" [ref=f2e42] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=JUuoRXU0yaM
+                        - generic [ref=f2e43]: Watch on
+    - generic [ref=e256]:
+      - heading "Achievements" [level=3] [ref=e258]
+      - paragraph [ref=e260]: 80K+ YouTube Subscribers
+      - paragraph [ref=e262]: 5K+ Students Taught
+      - paragraph [ref=e264]: What's In It For You?
+      - paragraph [ref=e266]: "- Roadmap to Software Testing Career- Get 2X Salary- Live Doubt Solving"
+    - generic [ref=e269]:
+      - generic [ref=e271]:
+        - heading "Manual Testing Roadmap" [level=2] [ref=e273]
+        - paragraph [ref=e277]: Becoming a QA / Manual Test Engineer Road Map Step By Step
+      - iframe [ref=e282]:
+        - generic [ref=f3e1]:
+          - generic "YouTube Video Player" [ref=f3e3]
+          - generic [ref=f3e5]:
+            - generic:
+              - generic:
+                - generic [ref=f3e6] [cursor=pointer]
+                - button "Play video" [ref=f3e10] [cursor=pointer]
+                - button "Hide player controls" [ref=f3e12] [cursor=pointer]
+                - generic [ref=f3e14]:
+                  - generic [ref=f3e19]:
+                    - generic [ref=f3e20]:
+                      - link "Becoming a QA / Manual Test Engineer Road Map Step By Step in 2022" [ref=f3e21] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=nanVJR2HM9I
+                      - link "The Testing Academy" [ref=f3e22] [cursor=pointer]:
+                        - /url: /channel/UC2TpiJFaC0f4_5GopyMkDdQ
+                    - generic [ref=f3e24]:
+                      - button [ref=f3e25] [cursor=pointer]
+                      - generic [ref=f3e27]:
+                        - generic: The Testing Academy
+                        - generic: 206K subscribers
+                  - generic [ref=f3e28]:
+                    - button "Share" [ref=f3e31] [cursor=pointer]
+                    - link "Watch on YouTube" [ref=f3e42] [cursor=pointer]:
+                      - /url: https://www.youtube.com/watch?v=nanVJR2HM9I
+                      - generic [ref=f3e43]: Watch on
+    - generic [ref=e285]:
+      - generic [ref=e287]:
+        - heading [level=2] [ref=e289]:
+          - text: Complete Roadmap to
+          - strong [ref=e290]: Become an API Tester
+        - paragraph [ref=e294]: How to become the API Tester in 2 month by Learning POSTMAN and Rest Assured.
+      - iframe [ref=e299]:
+        - generic [ref=f4e1]:
+          - generic "YouTube Video Player" [ref=f4e3]
+          - generic [ref=f4e5]:
+            - generic:
+              - generic:
+                - generic [ref=f4e6] [cursor=pointer]
+                - button "Play video" [ref=f4e10] [cursor=pointer]
+                - button "Hide player controls" [ref=f4e12] [cursor=pointer]
+                - generic [ref=f4e14]:
+                  - generic [ref=f4e19]:
+                    - generic [ref=f4e20]:
+                      - link "Complete Roadmap to Become an API Tester 🔥 | Learn API Testing in 2 months" [ref=f4e21] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=-fkBMiH6wRM
+                      - link "The Testing Academy" [ref=f4e22] [cursor=pointer]:
+                        - /url: /channel/UC2TpiJFaC0f4_5GopyMkDdQ
+                    - generic [ref=f4e24]:
+                      - button [ref=f4e25] [cursor=pointer]
+                      - generic [ref=f4e27]:
+                        - generic: The Testing Academy
+                        - generic: 206K subscribers
+                  - generic [ref=f4e28]:
+                    - button "Share" [ref=f4e31] [cursor=pointer]
+                    - link "Watch on YouTube" [ref=f4e42] [cursor=pointer]:
+                      - /url: https://www.youtube.com/watch?v=-fkBMiH6wRM
+                      - generic [ref=f4e43]: Watch on
+    - generic [ref=e303]:
+      - generic [ref=e305]:
+        - paragraph [ref=e307]: © 2026 TheTestingAcademy
+        - list [ref=e309]:
+          - listitem [ref=e310]:
+            - link "Home" [ref=e311] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e312]:
+            - link "Courses" [ref=e313] [cursor=pointer]:
+              - /url: /courses
+          - listitem [ref=e314]:
+            - link "Support" [ref=e315] [cursor=pointer]:
+              - /url: /support
+          - listitem [ref=e316]:
+            - link "Terms & Conditions" [ref=e317] [cursor=pointer]:
+              - /url: /terms
+          - listitem [ref=e318]:
+            - link "Privacy Policy" [ref=e319] [cursor=pointer]:
+              - /url: /privacypolicy
+          - listitem [ref=e320]:
+            - link "Cookie Policy" [ref=e321] [cursor=pointer]:
+              - /url: /cookiepolicy
+          - listitem [ref=e322]:
+            - link "Refund Policy" [ref=e323] [cursor=pointer]:
+              - /url: https://www.thetestingacademy.com/refundpolicy
+      - list [ref=e327]:
+        - listitem [ref=e328]:
+          - link "" [ref=e329] [cursor=pointer]:
+            - /url: https://facebook.com/techdutta
+        - listitem [ref=e330]:
+          - link "" [ref=e331] [cursor=pointer]:
+            - /url: https://www.instagram.com/thetestingacademy/?hl=en
+        - listitem [ref=e332]:
+          - link "" [ref=e333] [cursor=pointer]:
+            - /url: https://twitter.com/itstechmode
+        - listitem [ref=e334]:
+          - link "" [ref=e335] [cursor=pointer]:
+            - /url: https://www.youtube.com/c/TheTestingAcademy/
+  - contentinfo
+  - text:  

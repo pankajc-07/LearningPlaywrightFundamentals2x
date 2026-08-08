@@ -3,7 +3,6 @@ import { Page, Locator, expect } from '@playwright/test';
 export class LoginPage {
 
     // Page Locator
-
     readonly page: Page;
     readonly emailInput: Locator;
     readonly passwordInput: Locator;

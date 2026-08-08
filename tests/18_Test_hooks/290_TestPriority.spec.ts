@@ -43,3 +43,39 @@ console.log("*************************");
 
 //Practical examples 
 console.log("Example number 01");
+
+test('Test 01', async ({ page }) => {
+
+    await page.goto("https://app.vwo.com")
+})
+
+test('Test 02', async ({ page }) => {
+
+    await page.goto("https://app.vwo.com")
+})
+
+// test.describe.configure({ mode: 'parallel' });
+
+test('Priority 1: Login Test ', async ({ page }) => {
+    await page.goto("https://app.vwo.com")
+})
+
+test('Priority 2: Login Test ', async ({ page }) => {
+    await page.goto("https://app.vwo.com")
+})
+
+test('Login test2 @p1 @smoke', async ({ page }) => {
+    await page.goto('https://app.vwo.com');
+});
+
+test('Login test3  @smoke @regression', async ({ page }) => {
+    await page.goto('https://app.vwo.com');
+});
+
+//npx playwright test --grep '@p1'
+//npx playwright test --grep '@smoke'
+//npx playwright test --grep '@regression'
+
+
+
+
